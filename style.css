@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 50px;
+  background-color: #446cb3;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.submit {
+  width: 35%;
+  min-height: 100px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin: 50px 0;
+  float: left;
+}
+
+.submit form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.submit .form-group {
+  margin: 5% 0;
+}
+
+.submit .form-group textarea {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  resize: none;
+  padding: 10px;
+}
+
+.submit .form-group input:focus,
+.submit .form-group textarea:focus {
+  outline: none !important;
+  border-color:#446cb3;
+}
+
+.submit .form-group input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.submit .form-group input[type="submit"] {
+  background-color: #446cb3;
+  color: #ffffff;
+  border: 1px solid #446cb3;
+}
+
+.submit .form-group input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #446cb3;
+  cursor: pointer;
+}
+
+.posts {
+  width: 60%;
+  min-height: 100px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin: 50px 0;
+  float: right;
+}
+
+.post {
+  padding: 25px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post span {
+  color: #818181;
+  display: block;
+  margin-top: 25px;
+}
+
+.footer {
+  clear: both;
+  border-top: 1px solid #d3d3d3;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #818181;
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  
+  .submit {
+    width: 90%;
+    margin: 50px auto;
+    float: none;
+  }
+  
+  .posts {
+    width: 90%;
+    margin: 50px auto;
+    float: none;
+  }
+}
